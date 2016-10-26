@@ -62,6 +62,7 @@
                 <li {{ Admin::requestIs('contentManager/menu')  ? ' class=active' : '' }}><a href="{{ Admin::route('contentManager.menu.index') }}"><i class="fa fa-bars"></i> {{ trans('default.menu') }}</a></li>
                 <li {{ Admin::requestIs('contentManager/theme')  ? ' class=active' : '' }}><a href="{{ Admin::route('contentManager.menu.index') }}"><i class="fa fa-bars"></i> {{ trans('default.theme') }}</a></li>
                 <li {{ Admin::requestIs('contentManager/widget')  ? ' class=active' : '' }}><a href="{{ Admin::route('contentManager.menu.index') }}"><i class="fa fa-bars"></i> {{ trans('default.widget') }}</a></li>
+                <li {{ Admin::requestIs('admin/generations')  ? ' class=active' : '' }}><a href="{!! route('admin.generations.index') !!}"><i class="fa fa-edit"></i><span>Generations</span></a></li>
               </ul>
               <ul class="nav nav-sidebar">
                 <li><a href="">Nav item again</a></li>

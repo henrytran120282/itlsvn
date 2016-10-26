@@ -160,7 +160,15 @@ return [
         App\Providers\ThemeServiceProvider::class,
         App\Modules\ModulesServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-
+        /**
+         * Package Services Provider
+         */
+        Collective\Html\HtmlServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
+        \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -210,7 +218,11 @@ return [
         'Helper' => App\Facades\Helper::class,
         'Theme' => App\Facades\Theme::class,
         'Widget' => App\Facades\Widget::class,
-        'Image' => Intervention\Image\Facades\Image::class
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Form'      => Collective\Html\FormFacade::class,
+        'Html'      => Collective\Html\HtmlFacade::class,
+        'Flash'     => Laracasts\Flash\Flash::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

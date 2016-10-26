@@ -66,4 +66,8 @@ class Helper
     public function appTitle($title){
         return ($title == "") ? $this->option("site_title") : $title." - ".$this->option("site_title");
     }
+
+    public function menuList(){
+        return true;
+    }
 }
